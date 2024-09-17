@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amblessed Product Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="product-imge">
+                <img src="image1.png" alt="" id="quality">
+                <div class="sub-img">
+                    <div class="subtitue"><img src="image1.png" alt="" class="small" id="love1"></div>
+                    <div class="subtitue"><img src="image3.png" alt=""  class="small" id="love2"></div>
+                    <div class="subtitue"><img src="image2.png" alt="" class="small" id="love3"></div>
+                </div>
+                <div class="radios">
+                    <span class="btn  active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div class="radios">
+            </div>
+            <div class="product-details">
+                <h1>Casual T-Shirt</h1>
+                <h3>$15.00</h3>
+                <h5>30% Off</h5>
+                <p>Amblessed Fashion is an American Manufacturer of
+                    jeans and other clothing items particularly workwear, school wear and
+                    occasional wears </p>
+                <div class="buttons">
+                    <h4>Size</h4>
+                    <label for="small">
+                        <input type="radio" id="small" name="Size">
+                        <p id="small">S</p>
+                    </label>
+                    <label for="medium">
+                        <input type="radio" id="medium" name="Size">
+                        <p id="medium">M</p>
+                    </label>
+                    <label for="large">
+                        <input type="radio" id="large" name="Size">
+                        <p id="large">L</p>
+                    </label>
+                    <label for="xlarge">
+                        <input type="radio" id="xlarge" name="Size">
+                        <p id="xlarge">XL</p>
+                    </label>
+                    <label for="xxlarge">
+                        <input type="radio" id="xxlarge" name="Size">
+                        <p id="xxlarge">XXL</p>
+                    </label>
+                </div>
+                <H1 id="content"></H1>
+                <div class="buttons3">
+                    <label>Quanity</label><input type="number" id="number" value="1">
+                </div class="buttons3">
+                <div class="buttons1">
+                    <h4>Colors</h4>
+                    <label for="color">
+                        <input type="radio" name="color" id="color">
+                        <span class="bag"></span>
+                    </label>
+                    <label for="color1">
+                        <input type="radio" name="color" id="color1">
+                        <span class="bag1"></span>
+                    </label>
+                    <label for="color2">
+                        <input type="radio" name="color" id="color2">
+                        <span class="colors2"></span>
+                    </label>
+                    <label for="color3">
+                        <input type="radio" name="color" id="color3">
+                        <span class="colors3"></span>
+                    </label>
+                    <label for="color4">
+                        <input type="radio" name="color" id="color4">
+                        <span class="colors4"></span>
+                    </label>
+                </div>
+                <H1 id="content1"></H1>
+
+
+
+                <Button id="Buy">Buy Now</Button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const main = document.getElementById("quality");
+        const small = document.getElementById("small");
+        const  medium = document.getElementById("medium");
+        const  xlarge = document.getElementById("xlarge");
+        const  xxlarge = document.getElementById("xxlarge");
+        const  content = document.getElementById("content");
+        const large = document.getElementById("large");
+        const number = document.getElementById("number");
+        const subimg = document.getElementsByClassName("btn");
+
+         
+        subimg[0].onclick=function(){
+            main.src="image1.png"
+            for(bt of subimg)
+            bt.classList.remove("active");
+        this.classList.add("active")
+        }
+        subimg[1].onclick=function(){
+            main.src="image2.png";
+                        for(bt of subimg)
+            bt.classList.remove("active");
+        this.classList.add("active")
+        }
+        subimg[2].onclick=function(){
+            main.src="image3.png";
+              for(bt of subimg)
+            bt.classList.remove("active");
+        this.classList.add("active")
+        }
+
+ small.onclick=function (){
+    content.innerHTML=number.value + " SMALL"
+ }
+ medium.onclick=function (){
+    content.innerHTML= number.value +" MEDIUM"
+
+ }
+ large.onclick=function (){
+    content.innerHTML=number.value + " LARGE"
+ }
+ xlarge.onclick=function (){
+    content.innerHTML=number.value + " XLARGE"
+
+ }
+ xxlarge.onclick=function (){
+    content.innerHTML=number.value + " XXLARGE"
+
+ }
+ function refresh(){}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 134, 206, 0.607);
+}
+.product{
+    display: flex;
+    background: #fff;
+    width: 50%;
+    box-shadow: 2px 5px 20px 0px rgb(0, 0, 0) ;
+}
+.product-imge{
+    display: flex;
+    justify-content: end;
+    background-color: #000;
+    position: relative;
+    transform: scale(1.09);
+}
+#quality{
+    height: 400px;
+    margin-top: 30px;
+}
+#love1,#love2,#love3{
+    display: none;
+}
+.radios{
+    display: flex;
+    align-items: self-end;  
+    position: absolute;
+      flex-direction: column;
+      bottom: 9px;
+      margin-right: 10px;
+}
+.radios span{
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #8e8484;
+}
+.radios span.active{
+    background-color: rgba(28, 28, 216, 0.404);
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    padding-inline: 30px;
+    padding-bottom: 30px;
+}
+h5{
+    color: green;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    margin-top: 20px;
+}
+.buttons input:checked +p{
+    color: blue;
+}
+.buttons input{
+    display: none;
+}
+#btn{
+    margin-left: 5px;
+    border: none;
+    background: none;
+}
+#btn:hover{
+    color: blue;
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.buttons1{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+#Buy{
+    background-color: blue;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    color: #fff;
+}
+.buttons3{
+    display: inline-block;
+    justify-content: start;
+}
+.buttons3 input{
+    width: 40px;
+    height: 4vh;
+    margin-top: -5px;
+    margin-left: 20px;
+    padding-inline: 10px;
+    outline: none;
+    background-color: #e9e0e070;
+    border: none;
+    border-radius: 20px;}
+    h4{
+        margin-right: 30px;
+    }
+label{
+    width: 100%;
+}
+label span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.bag{
+    background: blue;
+}
+.bag1{
+    background: rgb(255, 0, 0);
+}
+.colors2{
+    background: rgb(255, 0, 251);
+}
+.colors3{
+    background: rgb(0, 255, 68);
+}
+.colors4{
+    background: rgb(238, 255, 0);
+}
+.buttons1 input{
+    display: none;
+}
+.buttons1 input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 4px #000;
+}
+#content{
+    color: blue;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
